@@ -27,8 +27,9 @@ Before running the application, ensure you have the following installed:
 
 - **Python 3.8+**
 - **Node.js 16+** and **npm**
-- **SingleStore Database** (or compatible MySQL database)
-- **Git**
+- **SingleStore Database** 
+- **Anthropic API Key**
+- **Openai API Key**
 
 ## 🔧 Environment Setup
 
@@ -51,20 +52,10 @@ user=your-database-username
 password=your-database-password
 database=your-database-name
 
-# Streaming Configuration
-MODE=db
-BATCH_SIZE=10
-NUM_THREADS=8
-LOG_INTERVAL=5
-
 # API Keys (Add as needed)
-# OPENAI_API_KEY=your-openai-api-key
-# NEWS_API_KEY=your-news-api-key
-# ALPHA_VANTAGE_API_KEY=your-alpha-vantage-key
-
-# Application Settings
-DEBUG=True
-ENVIRONMENT=development
+openai_api_key="x"
+news_api_key = "x"
+anthropic_api_key="x"
 ```
 
 ### 3. Database Setup
